@@ -1,0 +1,26 @@
+[user]
+	email = anthonyngo002@gmail.com
+	name = Anthony Ngo
+[cola]
+	spellcheck = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[init]
+	defaultBranch = main
+[core]
+  excludesFile = ~/.gitignore
+  editor = micro
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[apply]
+  whitespace = nowarn
+[mergetool]
+  keepBackup = false
+[difftool]
+  prompt = false
