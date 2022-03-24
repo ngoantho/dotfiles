@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+# ====== Variables =============================
+
+gaps_top="0"
+gaps_bottom="0"
+gaps_left="0"
+gaps_right="0"
+gaps_inner="0"
+yabai -m config external_bar all:0:26
+
+# ====== Tiling settings =======================
+
+yabai -m config layout                      bsp
+
+yabai -m config top_padding                 "${gaps_top}"
+yabai -m config bottom_padding              "${gaps_bottom}"
+yabai -m config left_padding                "${gaps_left}"
+yabai -m config right_padding               "${gaps_right}"
+yabai -m config window_gap                  "${gaps_inner}"
+
+yabai -m config mouse_follows_focus         off
+yabai -m config focus_follows_mouse         off
+
+yabai -m config mouse_modifier              off
+yabai -m config mouse_action1               move
+yabai -m config mouse_action2               resize
+
+yabai -m config window_topmost              off
+yabai -m config window_opacity              off
+yabai -m config window_shadow               float
+yabai -m config window_placement            second_child
+
+yabai -m config active_window_opacity       1.0
+yabai -m config normal_window_opacity       1.0
+yabai -m config split_ratio                 0.5
+yabai -m config auto_balance                on
+
+# ====== Border settings =======================
+
+yabai -m config window_border               off
+yabai -m config window_border_placement     interior
+yabai -m config window_border_width         3
+yabai -m config active_window_border_color  0xB2EBDBB2
+yabai -m config normal_window_border_color  0xB2282828
+yabai -m config insert_window_border_color  0xB2EBDBB2
+
+# Space labels
+# yabai -m space 1 --label "Primary"
+# yabai -m space 2 --label "Comms"
+# yabai -m space 3 --label "Tools"
+# yabai -m space 4 --label "Media"
+# yabai -m space 5 --label "Social"
+# yabai -m space 6 --label "Hobbies"
+# yabai -m space 7 --label "Secondary"
+
+# Rules
+yabai -m rule --add label="^Finder$" app="^Finder$" manage=off
+yabai -m rule --add label="System Preferences" app="^System Preferences$" manage=off
+yabai -m rule --add label="App Store" app="^App Store$" manage=off
+yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
+yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
+yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
+yabai -m rule --add label="Stickies" app="^Stickies$" manage=off
+yabai -m rule --add label="Todoist" app="^Todoist$" manage=off
+yabai -m rule --add label="Preview" app="^Preview$" manage=off
+yabai -m rule --add label="Zoom" app="^Zoom$" manage=off
+yabai -m rule --add label="CotEditor" app="^CotEditor$" manage=off
+yabai -m rule --add label="TextMate" app="^TextMate$" manage=off
+yabai -m rule --add label="Pages" app="^Pages$" manage=off
+yabai -m rule --add label="Microsoft Word" app="^Microsoft Word$" manage=off
+yabai -m rule --add label="Notes" app="^Notes$" manage=off
+yabai -m rule --add label="Effortless" app="^Effortless$" manage=off
+
