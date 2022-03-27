@@ -174,12 +174,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>350.500000:255.000000</string>
+				<string>281.500000:255.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -235,7 +233,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/usr/local/bin/yabai -m rule --add app="$1" label="$1" manage=off</string>
+					<string>/opt/homebrew/bin/yabai -m rule --add app="$1" label="$1" manage=off</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -345,12 +343,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>350.500000:437.000000</string>
+				<string>281.500000:437.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -360,7 +356,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>EC5A0CA4-B59E-403D-9C67-5BEBED1538A2</key>
+		<key>B66E557D-29C4-4306-BE2C-472CFC1BED3F</key>
 		<dict>
 			<key>from</key>
 			<string>2F6D20A3-B940-4890-9E83-2BC517F12174 - 2F6D20A3-B940-4890-9E83-2BC517F12174</string>

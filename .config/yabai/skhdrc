@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/usr/bin/env zsh
 
 # Navigation
 meh - h : yabai -m window --focus west

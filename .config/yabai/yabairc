@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
+
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # ====== Variables =============================
 
@@ -7,7 +10,7 @@ gaps_bottom="0"
 gaps_left="0"
 gaps_right="0"
 gaps_inner="0"
-yabai -m config external_bar all:0:26
+yabai -m config external_bar all:0:29
 
 # ====== Tiling settings =======================
 
