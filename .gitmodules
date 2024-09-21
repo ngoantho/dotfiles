@@ -1,6 +1,0 @@
-[submodule ".config/alacritty"]
-	path = .config/alacritty
-	url = https://github.com/ngoanthony/config-alacritty
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = https://github.com/ngoanthony/nvchad
